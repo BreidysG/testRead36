@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 36</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                La espada y el agua
+                <br><br>
+                Un día en el mes de julio, al amanecer, en una isla lejana, la isla de Sri Lanka, salen cuatro monjes desde un templo muy antiguo hacia el río más cercano. En sus manos llevan cuatro vasijas de metal. Uno de los monjes, además, lleva una espada que en otros tiempos fue el arma de un guerrero en una importante batalla contra los demonios destructores del bosque.
+                <br><br>
+                La batalla del agua.
+                Siempre quise ver esa espada de alguna forma. Me la imaginaba de oro con piedras preciosas como en las películas de tesoros antiguos. Nadie nunca la ha visto; solo los monjes de aquel templo.
+                <br><br>
+                Pero hoy es un día muy especial ya que por primera vez iré con mis padres y con los demás al río.
+                <br><br>
+                Es una larga caminata, pero aunque mi corazón palpita agitadamente, voy hacia el lugar sin detenerme en el camino. Por fin puedo ver a los monjes liderando nuestro grupo.
+                <br><br>
+                Mis padres me contaron varias veces que el monje mayor llega a un punto en el río que solo él conoce y en el momento indicado, corta el agua con la espada, como marcando el inicio de un nuevo año bendiciendo nuestras vidas. Cortar el agua siempre me pareció imposible pero me dijeron que hay un lugar en el río que sólo los monjes conocen y que el lugar exacto está marcado por una tienda cubierta de tela blanca y ramas de árboles por lo que no nadie puede ver el ritual. La gente tiene que esperar y observar desde donde se encuentren ubicados.
+                <br><br>
+                Llegamos y de inmediato la gente deja de hablar y todos miran hacia el río con las manos enlazadas en una oración silenciosa.
+                <br><br>
+                Quiero preguntar mil cosas pero no me dejan hablar. En realidad hubiera sido inútil porque aquellos momentos son tan especiales para todos que al final tampoco me habrían prestado atención.
+                <br><br>
+                El monje mayor ingresa con la espada en aquella especie de tienda. El silencio es ahora abrumador y sólo yo puedo escuchar una voz a lo lejos. Me lo imagino ejecutando una danza con la espada, en un remolino de cantos mientras un guerrero, el dueño de la espada se aparecería. El guerrero tendría que luchar contra fantasmas modernos y antiguos, esos que siguen conspirando para destruir lo que nos rodea y acabar con el agua que todavía tenemos.
+                <br><br>
+                Tengo sed. Me siento impaciente pero ya sale de la tienda y los otros tres monjes que lo esperaban entran con sus vasijas de cobre dentro de la tienda.
+                <br><br>
+                Al salir las vasijas de cobre están llenas de agua. En un momento las llevarán de regreso al templo para cuidarlas hasta el año siguiente donde el mismo ritual se llevará a cabo. Es el momento de lanzarse al agua, darse un baño o sumergir los pies. Hay muchos que recogen el agua en pequeños frascos. Veo a mi madre también llenar uno con devoción.
+                <br><br>
+                Entiendo que no es la espada sino el agua y entonces la ceremonia ancestral tiene sentido. De alguna forma me transformo en un guerrero y pienso en lo que vi, en lo que significa no tomar el agua como algo permanente o eterno y que es de propiedad de todos.
+                <br><br>
+                Voy a volver al río y encontrar mi espada en el reflejo de los últimos rayos del sol de aquella tarde en que el agua fue cortada en dos.
+            </p>
+            
+            
+               
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
